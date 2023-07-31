@@ -1,0 +1,18 @@
+{
+    "create_table":[
+        {
+            "CREATE TABLE IF NOT EXISTS USER (ID INT PRIMARY KEY NOT NULL, NAME TEXT NOT NULL);":"",
+            "CREATE TABLE IF NOT EXISTS HISTORY (ID INT PRIMARY KEY NOT NULL, NAME TEXT NOT NULL, STRING TEXT, TIME);":""
+        }
+    ],
+    "retrieve":[
+        {
+            "user" : "SELECT * FROM USER;",
+            "history": "SELECT * FROM HISTORY;",
+            "insert_history": "INSERT INTO HISTORY (NAME, STRING, TIME) VALUE ('TOM', 'WAHAHA', datetime('now');"
+        }
+    ],
+    "retrieve_history":[
+
+    ]
+}

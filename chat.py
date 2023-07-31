@@ -124,10 +124,10 @@ def window2(main):
 
 def checkServer(address, port):
     s = socket.socket()  
-    s.settimeout(3)   # 5 seconds
+    s.settimeout(3)
     try:
-        s.connect((address.get(), int(port.get())))         # "random" IP address and port
-        if s.recv(1024).decode() != 'SUCCESS':
+        s.connect((address.get(), int(port.get())))
+        if s.recv(1024).decode() != 'LOGINSUCCESS':
             print("invaild")
             return False
         ## TO do
